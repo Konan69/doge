@@ -24,7 +24,8 @@ Body{
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../public/anarchy.png');
+  background-image: url('../public/doge.png');
+  filter: blur(3px);
   background-size: cover;
   background-position: center;
   z-index: -1;

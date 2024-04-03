@@ -9,10 +9,13 @@ const App = () => {
   const [search, setSearch] = useState('');
   const [extraInputValue, setExtraInputValue] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isTwitterFollowed, setIsTwitterFollowed] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (search.length < 42) {
+    if (!isTwitterFollowed) {
+    alert('Please follow us on Twitter before joining the airdrop.')
+     } else if (search.length < 42) {
       alert('Invalid address');
       // You can perform additional actions here, such as updating a state variable for displaying the error message in the UI
     }  else if (!extraInputValue) {
@@ -37,14 +40,20 @@ const App = () => {
     setExtraInputValue(event.target.value);
   };
 
+  const handleTwitterFollow = () => {
+    // You can also track that user has followed Twitter here if needed.
+    setIsTwitterFollowed(true);
+  };
+
   return (
     <main>
     <div className='bg-image'> </div>
     <div className='Content' >
-        <h1 className='RIOT'> Want to join Doge on Base's first airdrop raffle?</h1>
+        <h1 className='RIOT'>Join Doge on Base airdrop Raffle</h1>
         <div className='wallet'>
             Enter your wallet below and click to join airdrop
           </div>
+          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer">here</a> and submit wallet.</p>
         <form onSubmit={handleSubmit}>
           <input
             value = {search}
