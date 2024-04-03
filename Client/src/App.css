@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+Body{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Anarchy.png');
+  background-size: cover;
+  background-position: center;
+  text-align: top;
+
+}
+
+.Content {
+  font-size: 20px;
+  padding-bottom: 350px;
+}
+.Submit{
+  color: black;
+}
+input {
+  border-radius: 20px;
+  outline: none;
+  border: transparent 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 10px 5px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wallet {
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  font-weight: bolder;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+button {
+  border-radius: 20px;
+  outline:none;
+  border: transparent 1px;
+  color: rgb(182, 23, 23);
+
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: 50;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.docs-icon {
+  padding: 0px 0px 0px 20px;
+}
+
+.twitter-icon {
+  padding-top: 40px;
+  display: inline-flex;
+  align-items: justify;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+
+.RIOT {
+  font-family: 'Rock Salt', cursive;
+  font-size:6vh;
+  color:rgb(198, 38, 38);
+  
+}
+@font-face {
+  font-family: 'RockSalt-Regular';
+  src: url('../public/RockSalt-Regular.ttf') format('truetype'),
+}
+
