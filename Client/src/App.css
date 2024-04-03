@@ -11,9 +11,6 @@ Body{
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url('../Anarchy.png');
-  background-size: cover;
-  background-position: center; */
   text-align: top;
 
 }
@@ -24,7 +21,7 @@ Body{
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../dist/doge.png');
+  background-image: url('../src/assets/doge.png');
   filter: blur(3px);
   background-size: cover;
   background-position: center;
