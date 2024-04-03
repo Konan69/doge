@@ -32,11 +32,10 @@ const App = () => {
   };
 
   return (
-    <main>
-    <div className='Content' >
-    {/* <Image> src = "../public/Anarchy.jpeg"</Image> */}
-        <h1 className='RIOT'>$RIOT AIRDROP!</h1>
-        <div className='wallet'>
+    <div className='Main'> 
+     <div className='Content' >
+        <h1 className='RIOT'> Want to join Doge on Base's first airdrop raffle?</h1>
+          <div className='wallet'>
             Enter your wallet below and click to join airdrop
           </div>
         <form onSubmit={handleSubmit}>
@@ -44,29 +43,30 @@ const App = () => {
             value = {search}
             type="text"
             name="city"
-            placeholder="ARB WALLET ADDRESS"
+            placeholder="BASE WALLET ADDRESS"
             onChange={handleChange}
           />
           <div>
-          <button type="submit">JOIN THE $RIOT</button>
+          <button type="submit">JOIN THE AIRDROP</button>
           </div>
         </form>
         <div className='Submit'>
         {isSubmitting && <p>Submitting... Please wait</p>}
         </div>
         <div className="twitter-icon">
-        <a href="https://twitter.com/RIOTONARB" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/_doge_on_base" target="_blank" rel="noopener noreferrer">
         <FaTwitter size={32} style={{ color: '#050302' }} />
         </a>
         <div className='docs-icon'>
-        <a href="https://usdriot-on-arbitrum.gitbook.io/usdriot-project-on-arb/" target="_blank" rel="noopener noreferrer">
+        <a href="" target="_blank" rel="noopener noreferrer">
         <FaBook size={32} style={{ color: '#050302' }} />
         </a> 
         </div>
           </div>
         
-      </div>
-    </main>
+      </div> 
+    </div> 
+    
   );
 };
 
