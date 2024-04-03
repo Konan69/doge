@@ -24,7 +24,7 @@ Body{
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../public/doge.png');
+  background-image: url('../dist/doge.png');
   filter: blur(3px);
   background-size: cover;
   background-position: center;
