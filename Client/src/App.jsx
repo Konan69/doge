@@ -7,6 +7,7 @@ import { FaBook} from 'react-icons/fa'
 
 const App = () => {
   const [search, setSearch] = useState('');
+  const [extraInputValue, setExtraInputValue] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (event) => {
@@ -14,7 +15,9 @@ const App = () => {
     if (search.length < 42) {
       alert('Invalid address');
       // You can perform additional actions here, such as updating a state variable for displaying the error message in the UI
-    } else {
+    }  else if (!extraInputValue) {
+      alert('Please enter X USERNAME');
+    }  else {
       setIsSubmitting(true);
       setTimeout(() => {
       alert('Your request has been processed, click OK or close and share the loaded tweet to complete airdrop registration!');
@@ -28,14 +31,18 @@ const App = () => {
 
   const handleChange = (event) => {
     setSearch(event.target.value);
-    
+  };
+
+  const handleExtraInputChange = (event) => {
+    setExtraInputValue(event.target.value);
   };
 
   return (
-    <div className='Main'> 
-     <div className='Content' >
+    <main>
+    <div className='bg-image'> </div>
+    <div className='Content' >
         <h1 className='RIOT'> Want to join Doge on Base's first airdrop raffle?</h1>
-          <div className='wallet'>
+        <div className='wallet'>
             Enter your wallet below and click to join airdrop
           </div>
         <form onSubmit={handleSubmit}>
@@ -46,6 +53,14 @@ const App = () => {
             placeholder="BASE WALLET ADDRESS"
             onChange={handleChange}
           />
+           <input
+            type="text"
+            name="extraInput1"
+            value={extraInputValue}
+            placeholder="X USERNAME"
+            onChange={handleExtraInputChange}
+          />
+          <div></div>
           <div>
           <button type="submit">JOIN THE AIRDROP</button>
           </div>
@@ -64,9 +79,9 @@ const App = () => {
         </div>
           </div>
         
-      </div> 
-    </div> 
+      </div>
     
+    </main>
   );
 };
 
