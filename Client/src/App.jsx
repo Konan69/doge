@@ -24,7 +24,7 @@ const App = () => {
       setIsSubmitting(true);
       setTimeout(() => {
       alert('Your request has been processed, click OK or close and share the loaded tweet to complete airdrop registration!');
-      const tweetText = encodeURIComponent('I have applied for DogeOnBase Airdrop: https://bsedoge.xyz/ First Come First Serve @_dogeonbase_');
+      const tweetText = encodeURIComponent('I have applied for DogeOnBase Airdrop: https://bsedoge.xyz/ First Come First Serve @doge_on__base');
       const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
       window.location.href = tweetUrl;
     }, 1500); // 3 seconds delay
@@ -51,12 +51,12 @@ const App = () => {
     <div className='bg-image'> </div>
     <div className="bg-blur"></div>
     <div className='Content' >
-        <h1 className='RIOT'>Doge on Base NFT/AIRDROP Raffle</h1>
+        <h1 className='RIOT'>DogeOnBase NFT / AIRDROP Raffle</h1>
         <div className='tokenomics'>
          <h2>Dogeonbase NFT Collection</h2> 
          <ul>
           <li>3,333 supply.</li>
-          <li>Minting on Manifold.</li>
+          <li>Mint on Manifold.xyz</li>
          </ul>
         
         
@@ -87,7 +87,7 @@ const App = () => {
   </ul>
         </div>
         <div className='wallet'>
-          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
+          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=doge_on__base" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
           
         <form onSubmit={handleSubmit}>
@@ -131,7 +131,7 @@ const App = () => {
 
         
         <div className="twitter-icon">
-        <a href="https://x.com/_dogeonbase_" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/doge_on__base" target="_blank" rel="noopener noreferrer">
         <FaTwitter size={32} style={{ color: '#fff' }} />
         </a>
         <div className='docs-icon'>
