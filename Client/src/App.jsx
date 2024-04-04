@@ -57,7 +57,6 @@ const App = () => {
          <ul>
           <li>3,333 supply.</li>
           <li>Minting on Manifold.</li>
-          <li>Dogeonbasenft holders will be airdropped $DOB token at launch.</li>
          </ul>
         
         
