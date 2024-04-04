@@ -51,21 +51,27 @@ const App = () => {
     <div className='bg-image'> </div>
     <div className="bg-blur"></div>
     <div className='Content' >
-        <h1 className='RIOT'>Doge on Base NFT/airdrop Raffle</h1>
+        <h1 className='RIOT'>Doge on Base NFT/AIRDROP Raffle</h1>
         <div className='tokenomics'>
-        <h2>Dogeonbase NFT Collection</h2>
-        <p>3,333 supply.</p>
-        <p>Minting on Manifold.</p>
-        <p>Dogeonbasenft holders will be airdropped $DOB token at launch.</p>
+         <h2>Dogeonbase NFT Collection</h2> 
+         <ul>
+          <li>3,333 supply.</li>
+          <li>Minting on Manifold.</li>
+          <li>Dogeonbasenft holders will be airdropped $DOB token at launch.</li>
+         </ul>
+        
+        
 
         <h2>$DOB Tokenomics</h2>
-        <p>Token total supply 1,000,000,000.</p>
-        <p>40% liquidity</p>
-        <p>30% airdrop to NFT holders</p>
-        <p>15% community airdrop</p>
-        <p>7% marketing</p>
-        <p>5% team</p>
-        <p>3% exchange listing</p>
+        <ul>
+          <li>Token total supply 1,000,000,000.</li>
+          <li>40% liquidity</li>
+          <li>30% airdrop to NFT holders</li>
+          <li>15% community airdrop</li>
+          <li>7% marketing</li>
+          <li>5% team</li>
+          <li>3% exchange listing</li>
+        </ul>
 
         <h2>Roadmap Phase 1</h2>
         <ul>
