@@ -48,6 +48,7 @@ const App = () => {
   return (
     <main>
     <div className='bg-image'> </div>
+    <div className="bg-blur"></div>
     <div className='Content' >
         <h1 className='RIOT'>Join Doge on Base airdrop Raffle</h1>
         <div className='wallet'>

@@ -22,11 +22,20 @@ Body{
   width: 100%;
   min-height: 100vh;
   background-image: url('../src/assets/doge.png');
-  filter: blur(3px);
+  /*filter: blur(3px);*/
   background-size: cover;
   background-position: center;
   z-index: -1;
 
+}
+.bg-blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .Content {
