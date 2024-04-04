@@ -58,7 +58,7 @@ const App = () => {
         <p>Minting on Manifold.</p>
         <p>Dogeonbasenft holders will be airdropped $DOB token at launch.</p>
 
-        <h2>$DOB Token Tokenomics</h2>
+        <h2>$DOB Tokenomics</h2>
         <p>Token total supply 1,000,000,000.</p>
         <p>40% liquidity</p>
         <p>30% airdrop to NFT holders</p>
@@ -71,8 +71,8 @@ const App = () => {
         <ul>
           <li>Create social</li>
           <li>Mint NFT</li>
-          <li>Launch token $DOB</li>
-          <li>Start Marketing</li>
+          <li>Launch $DOB token</li>
+          <li>Begin Marketing</li>
         </ul>
 
         <h2>Roadmap Phase 2</h2>

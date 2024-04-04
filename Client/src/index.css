@@ -16,11 +16,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #ffffff;
 }
 
 body {
@@ -32,10 +32,27 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.5em;
+  line-height: 1.1; 
+  margin-block-start: 0.5em;
+  margin-block-end: 0.2em;
 }
 
+p{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h2{
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+} 
+
+ul{
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  padding-inline-start: 25px;
+}
 
 button {
   border-radius: 8px;
@@ -58,11 +75,11 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #f1f6fb;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #fbfbfb;
   }
   button {
     background-color: #f9f9f9;
