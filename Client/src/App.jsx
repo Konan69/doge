@@ -24,7 +24,7 @@ const App = () => {
       setIsSubmitting(true);
       setTimeout(() => {
       alert('Your request has been processed, click OK or close and share the loaded tweet to complete airdrop registration!');
-      const tweetText = encodeURIComponent('I have applied for DogeOnBase Airdrop: https://dogeonbase.xyz/ First Come First Serve @_dogeonbase_');
+      const tweetText = encodeURIComponent('I have applied for DogeOnBase Airdrop: https://bsedoge.xyz/ First Come First Serve @_dogeonbase_');
       const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
       window.location.href = tweetUrl;
     }, 1500); // 3 seconds delay
@@ -50,7 +50,7 @@ const App = () => {
     <div className='bg-image'> </div>
     <div className="bg-blur"></div>
     <div className='Content' >
-        <h1 className='RIOT'>Join Doge on Base airdrop Raffle</h1>
+        <h1 className='RIOT'>Doge on Base NFT/airdrop Raffle</h1>
         <div className='wallet'>
           <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
