@@ -31,7 +31,6 @@ const App = () => {
     }
   };
   
-
   const handleChange = (event) => {
     setSearch(event.target.value);
   };
@@ -44,6 +43,8 @@ const App = () => {
     // You can also track that user has followed Twitter here if needed.
     setIsTwitterFollowed(true);
   };
+  
+  const tokenomics = ''
 
   return (
     <main>
@@ -51,6 +52,34 @@ const App = () => {
     <div className="bg-blur"></div>
     <div className='Content' >
         <h1 className='RIOT'>Doge on Base NFT/airdrop Raffle</h1>
+        <div className='tokenomics'>
+        <h2>Dogeonbase NFT Collection</h2>
+        <p>3,333 supply.</p>
+        <p>Minting on Manifold.</p>
+        <p>Dogeonbasenft holders will be airdropped $DOB token at launch.</p>
+
+        <h2>$DOB Token Tokenomics</h2>
+        <p>Token total supply 1,000,000,000.</p>
+        <p>40% liquidity</p>
+        <p>30% airdrop to NFT holders</p>
+        <p>15% community airdrop</p>
+        <p>7% marketing</p>
+        <p>5% team</p>
+        <p>3% exchange listing</p>
+
+        <h2>Roadmap Phase 1</h2>
+        <ul>
+          <li>Create social</li>
+          <li>Mint NFT</li>
+          <li>Launch token $DOB</li>
+          <li>Start Marketing</li>
+        </ul>
+
+        <h2>Roadmap Phase 2</h2>
+        <ul>
+    <li>List on exchange TBA</li>
+  </ul>
+        </div>
         <div className='wallet'>
           <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
@@ -93,6 +122,8 @@ const App = () => {
         <div className='Submit'>
         {isSubmitting && <p>Submitting... Please wait</p>}
         </div>
+
+        
         <div className="twitter-icon">
         <a href="https://x.com/_dogeonbase_" target="_blank" rel="noopener noreferrer">
         <FaTwitter size={32} style={{ color: '#fff' }} />
@@ -102,8 +133,7 @@ const App = () => {
         <FaBook size={32} style={{ color: '#fff' }} />
         </a> 
         </div>
-          </div>
-        
+        </div>
       </div>
     
     </main>
