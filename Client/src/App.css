@@ -22,11 +22,20 @@ Body{
   width: 100%;
   min-height: 100vh;
   background-image: url('../src/assets/doge.png');
-  filter: blur(3px);
+  /*filter: blur(3px);*/
   background-size: cover;
   background-position: center;
   z-index: -1;
 
+}
+.bg-blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.568);
+  z-index: -1;
 }
 
 .Content {
@@ -50,9 +59,7 @@ input {
   color: black;
 }
 input {
-  border-radius: 20px;
-  outline: none;
-  border: transparent 10px;
+  background: none;
   padding: 10px;
   padding-bottom: 10px;
   margin: 10px 5px;
@@ -60,18 +67,20 @@ input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .wallet {
-  color: rgb(0, 0, 0);
-  font-size: larger;
+  color: rgb(255, 255, 255);
+  font-size:xx-large ;
   font-weight: bolder;
-  font-family: 'Waiting for the Sunrise', cursive;
+  font-family: 'Lobster Two';
+}
+.link{
+  color: #00a6ff;
 }
 button {
   border-radius: 20px;
   outline:none;
   border: transparent 1px;
-  color: rgb(182, 23, 23);
-
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: #ab9883;
   padding: 10px;
   font-weight: 50;
   
@@ -94,7 +103,7 @@ button {
 .RIOT {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size:6vh;
-  color:rgb(198, 38, 38);
+  color:rgb(255, 255, 255);
   
 }
 @font-face {
@@ -102,3 +111,35 @@ button {
   src: url('../public/RockSalt-Regular.ttf') format('truetype'),
 }
 
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+
+.inputs .base_wallet, .x_username{
+  position: relative;
+}
+
+.inputs .base_wallet input{
+  height: 100%;
+  border: none;
+  border-bottom:  2px solid silver;
+}
+.inputs .x_username input{
+  height: 100%;
+  border: none;
+  border-bottom:  2px solid silver;
+  
+}
+label{
+  text-align: left;
+font-weight: bold;
+}
+input::placeholder{
+  color: rgba(240, 248, 255, 0.61);
+}
