@@ -48,27 +48,43 @@ const App = () => {
   return (
     <main>
     <div className='bg-image'> </div>
+    <div className="bg-blur"></div>
     <div className='Content' >
         <h1 className='RIOT'>Join Doge on Base airdrop Raffle</h1>
         <div className='wallet'>
-          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer">here</a> and submit wallet.</p>
+          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=_dogeonbase_" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
           
         <form onSubmit={handleSubmit}>
-          <input
-            value = {search}
-            type="text"
-            name="city"
-            placeholder="BASE WALLET ADDRESS"
-            onChange={handleChange}
-          />
-           <input
-            type="text"
-            name="extraInput1"
-            value={extraInputValue}
-            placeholder="X USERNAME"
-            onChange={handleExtraInputChange}
-          />
+          <div className="inputs">
+            <div className="base_wallet">
+              <label htmlFor="base_walletid">What's Your Base Address?</label>
+                <input
+                    value = {search}
+                    type="text"
+                    name="city"
+                    id='base_walletid'
+                    placeholder="BASE WALLET ADDRESS"
+                    onChange={handleChange}
+                />
+                
+            </div>
+
+            <div className="x_username">
+              <label htmlFor="x_usernameid">What's Your X Username?</label>
+                <input
+                    type="text"
+                    name="extraInput1"
+                    id='x_usernameid'
+                    value={extraInputValue}
+                    placeholder="X USERNAME"
+                    onChange={handleExtraInputChange}
+                />
+                
+            </div>
+          </div>
+          
+           
           <div></div>
           <div>
           <button type="submit">JOIN THE AIRDROP</button>
@@ -79,11 +95,11 @@ const App = () => {
         </div>
         <div className="twitter-icon">
         <a href="https://x.com/_dogeonbase_" target="_blank" rel="noopener noreferrer">
-        <FaTwitter size={32} style={{ color: '#050302' }} />
+        <FaTwitter size={32} style={{ color: '#fff' }} />
         </a>
         <div className='docs-icon'>
         <a href="" target="_blank" rel="noopener noreferrer">
-        <FaBook size={32} style={{ color: '#050302' }} />
+        <FaBook size={32} style={{ color: '#fff' }} />
         </a> 
         </div>
           </div>
