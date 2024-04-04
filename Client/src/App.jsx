@@ -78,6 +78,7 @@ const App = () => {
           <li>Create social</li>
           <li>Mint NFT</li>
           <li>Launch $DOB token</li>
+          <li>Airdrop NFT holders</li>
           <li>Begin Marketing</li>
         </ul>
 
