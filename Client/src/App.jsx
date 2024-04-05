@@ -24,7 +24,7 @@ const App = () => {
       setIsSubmitting(true);
       setTimeout(() => {
       alert('Your request has been processed, click OK or close and share the loaded tweet to complete airdrop registration!');
-      const tweetText = encodeURIComponent('I have applied for DogeOnBase Airdrop: https://bsedoge.xyz/ First Come First Serve @doge_on__base');
+      const tweetText = encodeURIComponent('Powered by $DOB🐶. I just applied for the @doge_on__base airdrop Pledge here : https://airdrop.dogebse.xyz');
       const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
       window.location.href = tweetUrl;
     }, 1500); // 3 seconds delay
@@ -105,7 +105,7 @@ const App = () => {
                     type="text"
                     name="city"
                     id='base_walletid'
-                    placeholder="BASE WALLET ADDRESS"
+                    placeholder="EVM WALLET ADDRESS"
                     onChange={handleChange}
                 />
                 
