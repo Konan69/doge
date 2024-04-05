@@ -51,9 +51,13 @@ const App = () => {
     <div className='bg-image'> </div>
     <div className="bg-blur"></div>
     <div className='Content' >
-        <h1 className='RIOT'>DogeOnBase NFT / AIRDROP Raffle</h1>
+       <h1 className='RIOT'>
+        <h1>DogeOnBase</h1>
+        <h1>NFT / Airdrop Raffle</h1>
+        </h1>
+        <hr></hr>
         <div className='tokenomics'>
-         <h2>Dogeonbase NFT Collection</h2> 
+         <h2>NFT Collection</h2> 
          <ul>
           <li>3,333 supply.</li>
           <li>Mint on Manifold.xyz</li>
@@ -86,6 +90,7 @@ const App = () => {
     <li>List on exchange TBA</li>
   </ul>
         </div>
+        <hr></hr>
         <div className='wallet'>
           <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=doge_on__base" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
