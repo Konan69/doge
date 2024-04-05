@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { FaTwitter} from 'react-icons/fa';
 import { FaBook} from 'react-icons/fa'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 
@@ -147,8 +148,9 @@ const App = () => {
         </div>
         </div>
       </div>
-    
+      <SpeedInsights />
     </main>
+    
   );
 };
 
