@@ -87,7 +87,8 @@ const App = () => {
 
         <h2>Roadmap Phase 2</h2>
         <ul>
-    <li>List on exchange TBA</li>
+        <li>New Website Launch</li>
+        <li>List on exchange TBA</li>
   </ul>
         </div>
         <hr></hr>
