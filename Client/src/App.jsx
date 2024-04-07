@@ -15,7 +15,7 @@ const App = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!isTwitterFollowed) {
-    alert('Please follow us on Twitter before joining the airdrop.')
+    alert('Please Follow / Like + RT before joining the airdrop.')
      } else if (search.length < 42) {
       alert('Invalid address');
       // You can perform additional actions here, such as updating a state variable for displaying the error message in the UI
@@ -94,7 +94,7 @@ const App = () => {
         </div>
         <hr></hr>
         <div className='wallet'>
-          <p>Follow us on Twitter <a href="https://twitter.com/intent/follow?screen_name=doge_on__base" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
+          <p>Follow + Like & RT <a href="https://x.com/doge_on__base/status/1777039882956706172" onClick={handleTwitterFollow} target="_blank" rel="noopener noreferrer" className='link'>here</a> and submit wallet.</p>
           </div>
           
         <form onSubmit={handleSubmit}>
